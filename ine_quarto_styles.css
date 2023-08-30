@@ -153,18 +153,18 @@ img {
 } */
 
 .reveal h2 {
-  background-image: url('imagenes/fondo2.png'); /* Replace with your image URL */
+  background-image: url('imagenes/logo_ine_pres.png'); /* Replace with your image URL */
   background-repeat: no-repeat;
   background-position: right center; /* Align the image to the right and vertically centered */
   background-size: 100% auto; /* Adjust the image size to cover the container */
   color: white; /* Text color */
   text-align: left; /* align the text */
-  font-size: 50px;
-  margin-top: 10px;
+  font-size: 45px;
+  margin-top: 5px;
   margin-left: 0px;
   /* padding-left: 10px; */
   /* padding-top: 10px;   */
-  padding: 10px 0px 10px 10px;
+  padding: 5px 0px 5px 10px; /* top right bottom left */
 }
 
 
@@ -238,6 +238,12 @@ img {
   text-align-last: center;
 }
 
+.center-figure {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .justify p {
   text-align: justify;
 }
@@ -246,3 +252,25 @@ img {
   text-align: justify;
   text-align-last: center;
 } */
+
+.columns {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.column img {
+  max-width: 100%;
+  height: auto;
+}
+
+.reveal .slide-logo {
+  height: 80px !important;
+  width: 80px !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
