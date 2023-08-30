@@ -1,0 +1,568 @@
+---
+# title: "Capacitación en R y herramientas de productividad"
+# author: "Abril 2021"
+format:
+  revealjs:
+    margin: 0
+    slide-number: true
+    preview-links: auto
+    logo: imagenes/logo_portada2.png
+    css: ine_quarto_styles.css
+    # css: xaringan-themer.css    
+    # footer: <https://quarto.org>
+---
+
+#
+
+<!---
+# TODO: this does not work
+ .linea-superior[]
+.linea-inferior[] 
+--->
+
+<!---
+# TODO: this does not work
+ ![](imagenes/logo_portada2.png){.center style="width: 20%;"}   
+--->
+
+[]{.linea-superior} 
+[]{.linea-inferior} 
+
+<!---
+ <img src="imagenes/logo_portada2.png" style="width: 20%"/>  
+--->
+
+<img src="imagenes/logo_portada2.png" width="20%"/>  
+
+[**Capacitación en R y herramientas de productividad**]{.big-par .center-justified}
+
+[**Proyecto Estratégico Servicios Compartidos para la Producción Estadística**]{.big-par .center-justified}
+
+[**Introducción y herramientas de exploración de datos**]{.big-par .center-justified}
+
+[**Abril 2021**]{.big-par .center-justified}
+
+
+#
+
+<!---
+# TODO: this does not work
+ .linea-superior[]
+.linea-inferior[] 
+--->
+
+<!---
+# TODO: this does not work
+ ![](imagenes/logo_portada2.png){.center style="width: 20%;"}   
+--->
+
+![](imagenes/logo_portada2.png){width=20%}
+
+[**Capacitación en R y herramientas de productividad**]{.big-par .center-justified}
+
+[**Proyecto Estratégico Servicios Compartidos para la Producción Estadística**]{.big-par .center-justified}
+
+[**Introducción y herramientas de exploración de datos**]{.big-par .center-justified}
+
+[**Abril 2021**]{.big-par .center-justified}
+
+
+[]{.linea-superior} 
+[]{.linea-inferior} 
+
+
+## PE Servicios Compartidos  
+
+<!---
+ ## PE Servicios Compartidos  
+--->
+
+. . .
+
+Esta actividad de capacitación se enmarca en el **PE SSCC**.
+
+. . .
+
+El PE SSCC es uno de los 4 proyectos estratégicos actualmente en funcionamiento en el INE (2018-2022).
+
+. . .
+
+Este proyecto busca:
+
+. . .
+
+
+[*"Proveer a la institución de estándares y desarrollos que permitan [automatizar]{.red}, [estandarizar]{.red}, [ordenar]{.red}, e [innovar]{.red} en la producción estadística, permitiendo reducir [tiempos]{.red} y [costos]{.red} del procesamiento y análisis de las diferentes operaciones estadísticas del INE y minimizando la probabilidad de [errores]{.red} en la publicación de resultados".*]{.medium-par}
+
+
+<!---
+ ![](imagenes/overview-mode.png){.border} 
+--->
+
+<!---
+ ::: {.r-fit-text}
+Big Text
+::: 
+--->
+
+## Estructura PE SSCC  
+
+![](imagenes/estructura_sscc1.png){.r-stretch}
+
+
+## Objetivos del aprendizaje 
+
+</br>
+
+. . .
+
+Al finalizar la capacitación se espera que las/os participantes:
+
+<!---
+TODO:
+{.incremental .medium-par} only changes size of bullet points, but not text in paragraphs. 
+Then I need to use [...]{.medium-par} so adjust size paragraph text.
+--->
+::: {.incremental .medium-par}
+
+- [**Estén familiarizados con el lenguaje de programación R** y cuenten con las habilidades necesarias para **profundizar aspectos de su interés** en este lenguaje.]{.medium-par}
+
+- [Sean capaces de **explorar** y **transformar** objetos en R.]{.medium-par}
+
+- [Manejen herramientas de **visualización** en R.]{.medium-par}
+
+- [Aprendan **buenas prácticas de escritura de código** en R.]{.medium-par}
+
+- [Conozcan **recomendaciones** que les permitan hacer **reproducibles** y **trazables** sus rutinas en R.]{.medium-par}
+
+:::
+
+## Organización de la capacitación 
+
+</br>
+
+::: {.medium-par}
+
+- La capacitación de nivel básico se compone de **6 sesiones**.
+
+. . .
+
+- Las sesiones de realizarán **semanalmente**, en el **día y hora convenidos** con el/la capacitador/a.
+
+:::  {.smaller-par}
+
+::: incremental
+
+- Haremos una pausa de 10 minutos durante la sesión.
+
+- Si van surgiendo dudas, pueden consultar durante la clase levantando la mano ✋.
+
+- Si tienen [dudas que no apuntan directamente al contenido que se está revisando]{.pur}, podemos quedarnos unos minutos al término de la clase para resolverlas, o bien [nos pueden consultar durante la semana]{.pur}.
+
+::::::
+
+## Contenidos de la capacitación 
+
+. . .
+
+</br>
+
+**Sesión 1:** Introducción y herramientas de exploración de datos
+
+    - ¿Qué es R y por qué usarlo?
+    - La interfaz de R Studio
+    - Tipos de datos y operaciones básicas
+    - Exploración y manipulación básica de un data frame
+
+. . .
+
+</br>
+
+**Sesión 2:** Procesamiento de bases de datos (1)
+
+    - Importación de datos desde distintos formatos a R
+    - Introducción a dplyr
+    - Manipulación básica de columnas (select(), rename())
+    - Manipulación básica de filas (arrange(), filter())
+    - Herramientas básicas de edición de datos (if_else())
+
+
+## ¿Qué cosas podemos hacer en R? 
+
+. . .
+
+[<img src="https://github.com/kjhealy/england_wales_pop/raw/master/figures/eng-wa-pop-pyr-labs-opt.gif" width="350"/>]{.pull-left}
+
+. . .
+
+[<img src="https://revolution-computing.typepad.com/.a/6a010534b1db25970b01b8d1a4d670970c-pi" height="300" width="400"/>]{.pull-right}
+
+
+## ¿Qué cosas podemos hacer en R? 
+
+. . .
+
+[**Boletín índice de Precios al Productor (IPP):**]{.center}
+
+. . .
+
+[<img src="imagenes/ipp.png" width="400"/>]{.center}
+. . .
+
+## ¿Qué cosas podemos hacer en R? 
+
+. . .
+
+**Boletines en Direcciones Regionales:**
+
+. . .
+
+[Boletín EMAT de la Dirección Regional de Ñuble](https://regiones.ine.cl/documentos/default-source/region-xvi/estadisticas-r16/1.-boletines-informativos/emat/2020/bolet%c3%adn-emat-%c3%b1uble_junio_2020.pdf?sfvrsn=d3efa129_4){.medium-par}
+
+. . .
+
+**Documentos metodológicos EPF:**
+
+::: {.incremental .medium-par}
+
+- [Cálculo de medidas de precisión para medianas de ingreso y gasto de la VIII EPF](https://www.ine.cl/docs/default-source/documentos-de-trabajo/c%C3%A1lculo-de-medidas-de-precisi%C3%B3n-para-medianas-de-ingreso-y-gasto-de-la-v.pdf?sfvrsn=e5b6a7b3_2){.medium-par}
+
+
+- [Reclasificación de la no respuesta: distinción entre la no respuesta al ítem y la no respuesta a la unidad](https://www.ine.cl/docs/default-source/documentos-de-trabajo/190320-documento-reclasificacion-de-la-no-respuesta-viii-epf.pdf?sfvrsn=e680d877_2){.medium-par}
+
+
+- [Métodos de Imputación VIII EPF: Gastos diarios e ingresos de la actividad laboral y jubilaciones](https://www.ine.cl/docs/default-source/documentos-de-trabajo/190320-documento-imputacion-viii-epf.pdf?sfvrsn=668a66c0_2){.medium-par}
+
+:::
+
+. . .
+
+<!---
+ .center[.medium-par[**Esta presentación está desarrollada completamente en R** 🤯🤯]] 
+--->
+
+[**Esta presentación está desarrollada completamente en R** 🤯🤯]{.center .medium-par}
+
+
+. . .
+
+<!---
+ class: center, middle
+
+.linea-superior[]
+.linea-inferior[] 
+--->
+
+## Interactuando con R 
+
+. . .
+
+[La interfaz de RStudio está distribuida de la siguiente manera]{.medium-par-red}
+
+. . .
+
+<!---
+ TODO: This doesn't work 
+--->
+<!---
+ ![](imagenes/interfaz_rstudio.png){.r-stretch} 
+--->
+![](imagenes/interfaz_rstudio.png){.center} 
+
+<!---
+ [<img src="imagenes/interfaz_rstudio.png" width="100"/>]{.center} 
+--->
+
+
+## Primeras operaciones en R 
+
+. . .
+
+[R puede ser usado como una calculadora.]{.medium-par}
+
+. . .
+
+[Pruébenlo ustedes mismos en su consola o script.]{.small-par}
+
+```r
+4 + 5
+```
+
+```{r}
+4 + 5
+```
+
+```r
+6 * 8
+```
+
+```{r}
+6 * 8
+```
+
+```r
+(4 + 5) + (6 * 8)
+```
+
+```{r}
+(4 + 5) + (6 * 8)
+```
+
+. . .
+
+[Se pueden hacer cosas mucho más interesantes. Para eso es útil **asignar valores a objetos**]{.medium-par}
+
+. . .
+
+[Para esto se utiliza el operador "**<-**" (W: shortcut **"Alt + -**" /Mac:  **"option + -"**)]{.medium-par} 
+
+. . .
+
+```r
+x <- 5
+```
+
+. . .
+
+
+## Primeras operaciones en R 
+
+. . .
+
+
+[Entonces, podríamos hacer cosas como esta.]{.medium-par}
+
+. . .
+
+```r
+a <- 20
+b <- 5
+
+a + b
+```
+
+```{r}
+a <- 20
+b <- 5
+
+a + b
+```
+
+. . .
+
+[El signo "**^**" representa al exponencial. También se puede usar "**"]{.medium-par}
+
+```r
+a + b ^ 2
+```
+
+```{r}
+a + b ^ 2
+```
+
+. . .
+
+[Entonces, podemos hacer operaciones sobre los valores almacenados, a través de estos objetos abstractos (a y b).]{.medium-par}
+
+
+## Tipos de datos en R 
+
+. . .
+
+[Conoceremos algunos de los tipos de datos más utilizados.]{.medium-par}
+
+. . .
+
+[**Vectores**]{.medium-par}
+
+. . .
+
+[Es el objeto más básico en **R**.]{.small-par}
+
+. . .
+
+[Un vector es una forma de **almacenar datos** que permite contener **una serie de valores del mismo tipo**.]{.small-par}
+
+. . .
+
+[Veamos algunos ejemplos.]{.small-par}
+
+```r
+nombres <- c("hans", "claudia", "sara", "pablo")
+a <- c(1, 5, 6, 9:12)
+b <- c(1, 2, 3, "gato")
+```
+
+. . .
+
+[La función "c" (combine) permite unir valores u objetos.]{.small-par}
+
+. . .
+
+::: {.incremental .small-par}
+
+- [¿cuántos elementos contiene el vector "a"?]{.small-par}
+
+- [¿De qué tipo son los vectores creados?]{.small-par}
+
+:::
+
+. . .
+
+[(con la función `length()` pueden contar los elementos de un vector)]{.small-par}
+
+. . .
+
+
+## Tipos de datos en R 
+
+. . .
+
+[Existen 5 tipos de vectores en R:]{.medium-par}
+
+. . .
+
+```r
+character <- c("gato", "perro")
+numeric <- c(8, 15.9) # reales o decimales
+integer <-  c(2L, 4L) # L indica que son enteros
+logical <- c(TRUE, FALSE, TRUE) 
+complex <- 3 + 4i # complejos
+```
+
+. . .
+
+[Podemos consultar cuál es el tipo de vector con `class()` o `typeof()`]{.medium-par}
+
+
+```r
+class(a)
+```
+
+```{r}
+class(a)
+```
+
+```r
+typeof(b)
+```
+```{r}
+typeof(b)
+```
+
+. . .
+
+<!---
+ .medium-par[Que los vectores sean atómicos ⚛️ significa que .medium-par-red[solo pueden contener un tipo de datos.]] 
+--->
+
+[Que los vectores sean atómicos ⚛️ significa que [solo pueden contener un tipo de datos.]{.medium-par-red}]{.medium-par}
+
+. . .
+
+
+## Tipos de datos en R 
+
+[**Creando vectores**]{.big-par}
+
+. . .
+
+[Vimos que es posible crear vectores con la función "c".]{.medium-par}
+
+```r
+x <-c(1,2,3,4,5)
+```
+
+. . .
+
+[Una secuencia sencilla también podemos crearla de la siguiente manera.]{.medium-par}
+
+```r
+y <- 1:20
+y
+```
+
+```{r}
+y <- 1:20
+y
+```
+
+. . .
+
+
+## Referencias
+
+Nada de esto sería posible sin:
+
+::: {.medium-par}
+
+- [R for Data Science, de Hadley Wickham](https://r4ds.had.co.nz/)
+
+- [Advanced R, de Hadley Wickham](http://adv-r.had.co.nz/Introduction.html)
+
+- [Data wrangling, exploration, and analysis with R, de Jenny Bryan](http://stat545.com/index.html)
+
+- [Introduction to R, de Data Carpentry](https://datacarpentry.org/R-genomics/01-intro-to-R.html#functions)
+
+- [Xaringan: Presentation Ninja, de Yihui Xie](https://github.com/yihui/xaringan). Para generar esta presentación con la plantilla ninja ⚔
+
+:::
+
+R for Data Science tiene una traducción al español realizada por la comunidad hispana de R:
+
+::: {.medium-par}
+
+- [R para ciencia de datos, de Hadley Wickham](https://es.r4ds.hadley.nz/)
+
+:::
+
+#
+
+<!---
+# TODO: this does not work
+ .linea-superior[]
+.linea-inferior[] 
+--->
+
+<!---
+# TODO: this does not work
+ ![](imagenes/logo_portada2.png){.center style="width: 20%;"}   
+--->
+
+[<img src="imagenes/logo_portada2.png" width="20%"/>]{.center}
+
+[**Capacitación en R y herramientas de productividad**]{.big-par .center-justified}
+
+[**Proyecto Estratégico Servicios Compartidos para la Producción Estadística**]{.big-par .center-justified}
+
+[**Introducción y herramientas de exploración de datos**]{.big-par .center-justified}
+
+[**Abril 2021**]{.big-par .center-justified}
+
+
+[]{.linea-superior} 
+[]{.linea-inferior} 
+
+<!---
+ ## Polar Axis  
+
+For a demonstration of a line plot on a polar axis, see @fig-polar.
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis, not a bear"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 4 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+``` 
+--->
