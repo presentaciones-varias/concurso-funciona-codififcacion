@@ -3,6 +3,7 @@
 # author: "Abril 2021"
 format:
   revealjs:
+    auto-stretch: false
     margin: 0
     slide-number: true
     preview-links: auto
@@ -41,34 +42,6 @@ format:
 [**Introducción y herramientas de exploración de datos**]{.big-par .center-justified}
 
 [**Abril 2021**]{.big-par .center-justified}
-
-
-#
-
-<!---
-# TODO: this does not work
- .linea-superior[]
-.linea-inferior[] 
---->
-
-<!---
-# TODO: this does not work
- ![](imagenes/logo_portada2.png){.center style="width: 20%;"}   
---->
-
-![](imagenes/logo_portada2.png){width=20%}
-
-[**Capacitación en R y herramientas de productividad**]{.big-par .center-justified}
-
-[**Proyecto Estratégico Servicios Compartidos para la Producción Estadística**]{.big-par .center-justified}
-
-[**Introducción y herramientas de exploración de datos**]{.big-par .center-justified}
-
-[**Abril 2021**]{.big-par .center-justified}
-
-
-[]{.linea-superior} 
-[]{.linea-inferior} 
 
 
 ## PE Servicios Compartidos  
@@ -118,48 +91,29 @@ Big Text
 
 Al finalizar la capacitación se espera que las/os participantes:
 
-<!---
-TODO:
-{.incremental .medium-par} only changes size of bullet points, but not text in paragraphs. 
-Then I need to use [...]{.medium-par} so adjust size paragraph text.
---->
 ::: {.incremental .medium-par}
 
-- [**Estén familiarizados con el lenguaje de programación R** y cuenten con las habilidades necesarias para **profundizar aspectos de su interés** en este lenguaje.]{.medium-par}
-
-- [Sean capaces de **explorar** y **transformar** objetos en R.]{.medium-par}
-
-- [Manejen herramientas de **visualización** en R.]{.medium-par}
-
-- [Aprendan **buenas prácticas de escritura de código** en R.]{.medium-par}
-
-- [Conozcan **recomendaciones** que les permitan hacer **reproducibles** y **trazables** sus rutinas en R.]{.medium-par}
-
+- **Estén familiarizados con el lenguaje de programación R** y cuenten con las habilidades necesarias para **profundizar aspectos de su interés** en este lenguaje. <br><br>
+- Sean capaces de **explorar** y **transformar** objetos en R. <br><br>
+- Manejen herramientas de **visualización** en R. <br><br>
+- Aprendan **buenas prácticas de escritura de código** en R. <br><br>
+- Conozcan **recomendaciones** que les permitan hacer **reproducibles** y **trazables** sus rutinas en R.
 :::
 
 ## Organización de la capacitación 
 
 </br>
 
-::: {.medium-par}
-
-- La capacitación de nivel básico se compone de **6 sesiones**.
 
 . . .
 
-- Las sesiones de realizarán **semanalmente**, en el **día y hora convenidos** con el/la capacitador/a.
-
-:::  {.smaller-par}
-
-::: incremental
-
-- Haremos una pausa de 10 minutos durante la sesión.
-
-- Si van surgiendo dudas, pueden consultar durante la clase levantando la mano ✋.
-
+::: {.incremental  .medium-par}
+- La capacitación de nivel básico se compone de **6 sesiones**. <br><br>
+- Las sesiones de realizarán **semanalmente**, en el **día y hora convenidos** con el/la capacitador/a. <br><br>
+- Haremos una pausa de 10 minutos durante la sesión. <br><br>
+- Si van surgiendo dudas, pueden consultar durante la clase levantando la mano ✋. <br><br>
 - Si tienen [dudas que no apuntan directamente al contenido que se está revisando]{.pur}, podemos quedarnos unos minutos al término de la clase para resolverlas, o bien [nos pueden consultar durante la semana]{.pur}.
-
-::::::
+:::
 
 ## Contenidos de la capacitación 
 
@@ -191,22 +145,73 @@ Then I need to use [...]{.medium-par} so adjust size paragraph text.
 
 . . .
 
-[<img src="https://github.com/kjhealy/england_wales_pop/raw/master/figures/eng-wa-pop-pyr-labs-opt.gif" width="350"/>]{.pull-left}
+![](https://github.com/kjhealy/england_wales_pop/raw/master/figures/eng-wa-pop-pyr-labs-opt.gif){.absolute top="100" left="30" width="500" height="550"}
+
+![](https://revolution-computing.typepad.com/.a/6a010534b1db25970b01b8d1a4d670970c-pi){.absolute .fragment top="100" right="80" width="450"}
+
+<!---
+ [<img src="https://github.com/kjhealy/england_wales_pop/raw/master/figures/eng-wa-pop-pyr-labs-opt.gif" width="500%"/>]{.pull-left} 
+--->
+
+<!---
+ [<img src="https://revolution-computing.typepad.com/.a/6a010534b1db25970b01b8d1a4d670970c-pi" height="300" width="400"/>]{.pull-right} 
+--->
+
+
+<!---
+# TODO: this is not creating figures in two columns
+
+## ¿Qué cosas podemos hacer en R? 
 
 . . .
 
-[<img src="https://revolution-computing.typepad.com/.a/6a010534b1db25970b01b8d1a4d670970c-pi" height="300" width="400"/>]{.pull-right}
+:::: {.columns}
+
+::: {.column width="50%"}
+![](https://github.com/kjhealy/england_wales_pop/raw/master/figures/eng-wa-pop-pyr-labs-opt.gif)
+:::
+
+::: {.column width="50%"}
+![](https://revolution-computing.typepad.com/.a/6a010534b1db25970b01b8d1a4d670970c-pi")
+:::
+
+:::: 
+--->
 
 
 ## ¿Qué cosas podemos hacer en R? 
 
 . . .
 
-[**Boletín índice de Precios al Productor (IPP):**]{.center}
+[**Boletín índice de Precios al Productor (IPP):**]{.center .big-par}
 
-. . .
+<!---
+ [<img src="imagenes/ipp.png" width="400"/>]{.center}  
+--->
 
-[<img src="imagenes/ipp.png" width="400"/>]{.center}
+<!---
+ ![](imagenes/ipp.png){fig-align="center" width="500" height="550"} 
+--->
+
+<!---
+ ![](imagenes/ipp.png){.center-figure  width="500%"} 
+--->
+
+<!---
+# TODO: this does not work
+ ![](imagenes/logo_portada2.png){.center style="width: 20%;"}   
+--->
+
+<!---
+ [<img src="imagenes/ipp.png" width="100%"/>]{.center}  
+--->
+
+<!---
+ ![](imagenes/ipp.png){fig-align="center" height="1000" width="1000"}  
+--->
+
+![](imagenes/ipp.png){.absolute top=150 left=250 width="500" height="500"}
+
 . . .
 
 ## ¿Qué cosas podemos hacer en R? 
@@ -267,11 +272,19 @@ Then I need to use [...]{.medium-par} so adjust size paragraph text.
 <!---
  ![](imagenes/interfaz_rstudio.png){.r-stretch} 
 --->
-![](imagenes/interfaz_rstudio.png){.center} 
+<!---
+ ![](imagenes/interfaz_rstudio.png){.center-figure} 
+--->
 
 <!---
  [<img src="imagenes/interfaz_rstudio.png" width="100"/>]{.center} 
 --->
+
+<!---
+ ![](imagenes/interfaz_rstudio.png){fig-align="center"}  
+--->
+
+![](imagenes/interfaz_rstudio.png){.absolute top=50 left=100 width="800" height="800"}
 
 
 ## Primeras operaciones en R 
