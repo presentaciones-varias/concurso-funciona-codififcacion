@@ -6,10 +6,10 @@ format:
     auto-stretch: false
     margin: 0
     slide-number: true
+    scrollable: true
     preview-links: auto
     logo: imagenes/logo_portada2.png
     css: ine_quarto_styles.css
-    # css: xaringan-themer.css    
     # footer: <https://quarto.org>
 ---
 
@@ -720,7 +720,7 @@ Es una base de [alto interés sociológico]{.medium-par-red}. 🧐
 
 
 
-## Volviendo a los *Data Frames* {.scrollable transition="slide"}
+## Volviendo a los *Data Frames* {transition="slide"}
 
 
 ::: {.panel-tabset}
@@ -785,7 +785,7 @@ df_g %>%
 :::
 
 
-## Volviendo a los *Data Frames* {.scrollable transition="slide"}
+## Volviendo a los *Data Frames* {transition="slide"}
 
 
 ::: {.panel-tabset}
