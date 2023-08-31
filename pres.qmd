@@ -92,7 +92,6 @@ Big Text
 Al finalizar la capacitación se espera que las/os participantes:
 
 ::: {.incremental .medium-par}
-
 - **Estén familiarizados con el lenguaje de programación R** y cuenten con las habilidades necesarias para **profundizar aspectos de su interés** en este lenguaje. <br><br>
 - Sean capaces de **explorar** y **transformar** objetos en R. <br><br>
 - Manejen herramientas de **visualización** en R. <br><br>
@@ -145,17 +144,30 @@ Al finalizar la capacitación se espera que las/os participantes:
 
 . . .
 
-![](https://github.com/kjhealy/england_wales_pop/raw/master/figures/eng-wa-pop-pyr-labs-opt.gif){.absolute top="100" left="30" width="500" height="550"}
-
-![](https://revolution-computing.typepad.com/.a/6a010534b1db25970b01b8d1a4d670970c-pi){.absolute .fragment top="100" right="80" width="450"}
-
 <!---
- [<img src="https://github.com/kjhealy/england_wales_pop/raw/master/figures/eng-wa-pop-pyr-labs-opt.gif" width="500%"/>]{.pull-left} 
+ ![](https://github.com/kjhealy/england_wales_pop/raw/master/figures/eng-wa-pop-pyr-labs-opt.gif){.absolute top="100" left="30" width="500" height="550"} 
 --->
 
 <!---
- [<img src="https://revolution-computing.typepad.com/.a/6a010534b1db25970b01b8d1a4d670970c-pi" height="300" width="400"/>]{.pull-right} 
+ . . . 
 --->
+
+<!---
+ ![](https://revolution-computing.typepad.com/.a/6a010534b1db25970b01b8d1a4d670970c-pi){.absolute .fragment top="100" right="80" width="450"} 
+--->
+
+
+<!---
+ [<img src="https://github.com/kjhealy/england_wales_pop/raw/master/figures/eng-wa-pop-pyr-labs-opt.gif" width="70%"/>]{.pull-left}  
+--->
+
+[<img src="https://github.com/kjhealy/england_wales_pop/raw/master/figures/eng-wa-pop-pyr-labs-opt.gif" width="70%"/>]{.absolute top="100" left="70" width="500" height="550"}
+
+<!---
+ [<img src="https://revolution-computing.typepad.com/.a/6a010534b1db25970b01b8d1a4d670970c-pi" height="300" width="400"/>]{.pull-right}  
+--->
+
+[<img src="https://revolution-computing.typepad.com/.a/6a010534b1db25970b01b8d1a4d670970c-pi" height="300" width="400"/>]{.absolute .fragment top="100" right="60" width="450"} 
 
 
 <!---
@@ -178,7 +190,6 @@ Al finalizar la capacitación se espera que las/os participantes:
 :::: 
 --->
 
-
 ## ¿Qué cosas podemos hacer en R? 
 
 . . .
@@ -198,11 +209,6 @@ Al finalizar la capacitación se espera que las/os participantes:
 --->
 
 <!---
-# TODO: this does not work
- ![](imagenes/logo_portada2.png){.center style="width: 20%;"}   
---->
-
-<!---
  [<img src="imagenes/ipp.png" width="100%"/>]{.center}  
 --->
 
@@ -210,7 +216,8 @@ Al finalizar la capacitación se espera que las/os participantes:
  ![](imagenes/ipp.png){fig-align="center" height="1000" width="1000"}  
 --->
 
-![](imagenes/ipp.png){.absolute top=150 left=250 width="500" height="500"}
+![](imagenes/ipp.png){.absolute top=150 left=300 width="400" height="500"}
+
 
 . . .
 
@@ -262,7 +269,8 @@ Al finalizar la capacitación se espera que las/os participantes:
 
 . . .
 
-[La interfaz de RStudio está distribuida de la siguiente manera]{.medium-par-red}
+<br>
+[La interfaz de RStudio está distribuida de la siguiente manera]{.center .medium-par-red}
 
 . . .
 
@@ -284,7 +292,7 @@ Al finalizar la capacitación se espera que las/os participantes:
  ![](imagenes/interfaz_rstudio.png){fig-align="center"}  
 --->
 
-![](imagenes/interfaz_rstudio.png){.absolute top=50 left=100 width="800" height="800"}
+![](imagenes/interfaz_rstudio.png){.absolute top=165 left=120 width="800" height="500"}
 
 
 ## Primeras operaciones en R 
