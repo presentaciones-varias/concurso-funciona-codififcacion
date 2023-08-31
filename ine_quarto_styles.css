@@ -42,6 +42,14 @@
   --black: #000000;
 }
 
+
+/* 
+----------------------------------------------------------------------------------------------------
+General settings for revealjs format.
+They have effect on all the elements of a particular kind which are found in the presentation.
+----------------------------------------------------------------------------------------------------
+*/
+
 .reveal section p {
   font-size: var(--text-font-size); /* Adjust the font size */
   line-height: 1.;
@@ -51,6 +59,81 @@
 .reveal code {
   font-size: 15px; /* Adjust the font size as needed */
 }
+
+/* .reveal section h2 {
+  color: red;
+} */
+
+
+.reveal h2 {
+  background-image: url('imagenes/logo_ine_pres.png'); /* Replace with your image URL */
+  background-repeat: no-repeat;
+  background-position: right center; /* Align the image to the right and vertically centered */
+  background-size: 100% auto; /* Adjust the image size to cover the container */
+  color: white; /* Text color */
+  text-align: left; /* align the text */
+  font-size: 45px;
+  margin-top: 5px;
+  margin-left: 0px;
+  /* padding-left: 10px; */
+  /* padding-top: 10px;   */
+  padding: 5px 0px 5px 10px; /* top right bottom left */
+}
+
+.reveal .slide-logo {
+  height: 80px !important;
+  width: 80px !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+Settings for text format
+----------------------------------------------------------------------------------------------------
+*/
+
+.big-par { /*párrafo grande */
+  font-size: 35px;
+}
+
+.big-par-red { /*párrafo grande y rojo */
+  font-size: 40px;
+  color: #4a25db;
+}
+
+.biggest{ /*párrafo más grande */
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.medium-par { /* párrafo mediano*/
+  font-size: 25px;
+}
+  
+.medium-par-red { /* párrafo mediano*/
+  font-size: 30px;
+  color: #4a25db;
+}
+
+
+.small-par { /* párrafo pequeño*/
+  font-size: 22px !important;
+}
+
+.smaller-par { /* párrafo pequeño*/
+  font-size: 10px;
+}
+
+.pur { /* normal purpura*/
+  color: #4a25db;
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+Settings for margins, aligments, etc.
+----------------------------------------------------------------------------------------------------
+*/
 
 .pull-left {
   float: left;
@@ -77,149 +160,6 @@ blockquote {
 
 .border-thick {
   border-width: 3px;
-}
-
-.linea-superior {
-  background-size: contain;
-  position: absolute;
-  top: 0em;
-  left: 0em;
-  width: 1000px;
-  height: 5px;
-  background: #123076;
-  margin-top: -30px;
-}
-
-.linea-inferior {
-  background-size: contain;
-  position: absolute;
-  bottom: 0em;
-  
-  left: 0em;
-  width: 1000px;
-  height: 5px;
-  background: #123076;
-  margin-bottom: -90px;
-}
-/* h2 {
-  color: white !important;
-  background-color: dimgrey !important;
-} */
-
-/* h2 {
-  color: white !important;
-  background-color: navy !important;
-  background: url(logo_portada2.png) 100% 100% no-repeat;
-  background: "logo_portada2.png";
-} */
-
-/* #pe-servicios-compartidos > h2 */
-
-/* h2 {
-  color: red;
-} */
-
-img {
-  width: 200px;
-  height: 300px;
-  object-fit: contain;
-}
-
-.red{
-  color: red;
-}
-
-/* #title-slide .title {
-        font-size: 4.5em;
-        color: #b22222;
-} */
-
-/* .color-slide h2 {
-  color: red;
- } */
-
-/* .reveal section h2 {
-  color: red;
-} */
-
-
-/* h1.title {
-  background-image: url(imagenes/logo_portada2.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100px;
-  text-align: left;
-  font-size: 50px;  
-} */
-
-.reveal h2 {
-  background-image: url('imagenes/logo_ine_pres.png'); /* Replace with your image URL */
-  background-repeat: no-repeat;
-  background-position: right center; /* Align the image to the right and vertically centered */
-  background-size: 100% auto; /* Adjust the image size to cover the container */
-  color: white; /* Text color */
-  text-align: left; /* align the text */
-  font-size: 45px;
-  margin-top: 5px;
-  margin-left: 0px;
-  /* padding-left: 10px; */
-  /* padding-top: 10px;   */
-  padding: 5px 0px 5px 10px; /* top right bottom left */
-}
-
-
-/* .banner h2 {
-    background-image: url('imagenes/fondo2.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 130% auto;
-    padding: 100px 0;
-    color: white;
-    background-color: white !important;
-    text-align: left;
-} */
-
-/* .banner h2 {
-  margin: 0;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-} */
-
-/* Text format (agregadas) */
-
-.big-par { /*párrafo grande */
-  font-size: 35px;
-}
-
-.big-par-red { /*párrafo grande y rojo */
-  font-size: 40px;
-  color: #4a25db;
-}
-
-.biggest{ /*párrafo más grande */
-  font-size: 100px;
-  font-weight: bold;
-}
-
-.medium-par { /* párrafo mediano*/
-  font-size: 25px;
-}
-  
-.medium-par-red { /* párrafo mediano*/
-  font-size: 30px;
-  color: #4a25db;
-}
-
-.small-par { /* párrafo pequeño*/
-  font-size: 22px !important;
-}
-
-.smaller-par { /* párrafo pequeño*/
-  font-size: 10px;
-}
-
-.pur { /* normal purpura*/
-  color: #4a25db;
 }
 
 .center {
@@ -253,6 +193,44 @@ img {
   text-align-last: center;
 } */
 
+
+/* 
+----------------------------------------------------------------------------------------------------
+Settings for extra features.
+----------------------------------------------------------------------------------------------------
+*/
+
+.linea-superior {
+  background-size: contain;
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  width: 1000px;
+  height: 5px;
+  background: #123076;
+  margin-top: -30px;
+}
+
+.linea-inferior {
+  background-size: contain;
+  position: absolute;
+  bottom: 0em;
+  
+  left: 0em;
+  width: 1000px;
+  height: 5px;
+  background: #123076;
+  margin-bottom: -90px;
+}
+
+
+/*
+----------------------------------------------------------------------------------------------------
+Settings for columns
+----------------------------------------------------------------------------------------------------
+*/
+
+
 .columns {
   display: flex;
 }
@@ -268,9 +246,89 @@ img {
   height: auto;
 }
 
-.reveal .slide-logo {
-  height: 80px !important;
-  width: 80px !important;
-  max-width: unset !important;
-  max-height: unset !important;
+/*
+----------------------------------------------------------------------------------------------------
+Settings for colors
+----------------------------------------------------------------------------------------------------
+*/
+
+.red{
+  color: red;
 }
+
+
+/*
+----------------------------------------------------------------------------------------------------
+Settings for figures
+----------------------------------------------------------------------------------------------------
+*/
+
+/* img {
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+} */
+
+/*
+----------------------------------------------------------------------------------------------------
+Settings under testing. 
+Their use is not recommended !!
+----------------------------------------------------------------------------------------------------
+*/
+
+
+/* h2 {
+  color: white !important;
+  background-color: dimgrey !important;
+} */
+
+/* h2 {
+  color: white !important;
+  background-color: navy !important;
+  background: url(logo_portada2.png) 100% 100% no-repeat;
+  background: "logo_portada2.png";
+} */
+
+/* #pe-servicios-compartidos > h2 */
+
+/* h2 {
+  color: red;
+} */
+
+/* #title-slide .title {
+        font-size: 4.5em;
+        color: #b22222;
+} */
+
+/* .color-slide h2 {
+  color: red;
+ } */
+
+
+
+/* h1.title {
+  background-image: url(imagenes/logo_portada2.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100px;
+  text-align: left;
+  font-size: 50px;  
+} */
+
+
+/* .banner h2 {
+    background-image: url('imagenes/fondo2.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 130% auto;
+    padding: 100px 0;
+    color: white;
+    background-color: white !important;
+    text-align: left;
+} */
+
+/* .banner h2 {
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+} */
