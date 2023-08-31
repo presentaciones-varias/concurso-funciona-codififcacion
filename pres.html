@@ -694,9 +694,11 @@ Big Text
 </div>
 <div class="fragment">
 <p><span class="small-par">Veamos algunos ejemplos.</span></p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>nombres <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"hans"</span>, <span class="st">"claudia"</span>, <span class="st">"sara"</span>, <span class="st">"pablo"</span>)</span>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>nombres <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"hans"</span>, <span class="st">"claudia"</span>, <span class="st">"sara"</span>, <span class="st">"pablo"</span>)</span>
 <span id="cb14-2"><a href="#cb14-2"></a>a <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">9</span><span class="sc">:</span><span class="dv">12</span>)</span>
 <span id="cb14-3"><a href="#cb14-3"></a>b <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="st">"gato"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 <div class="fragment">
 <p><span class="small-par">La función “c” (combine) permite unir valores u objetos.</span></p>
@@ -719,22 +721,24 @@ Big Text
 <p><span class="medium-par">Existen 5 tipos de vectores en R:</span></p>
 </div>
 <div class="fragment">
-<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>character <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"gato"</span>, <span class="st">"perro"</span>)</span>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="1|2|3|4|5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>character <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"gato"</span>, <span class="st">"perro"</span>)</span>
 <span id="cb15-2"><a href="#cb15-2"></a>numeric <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">8</span>, <span class="fl">15.9</span>) <span class="co"># reales o decimales</span></span>
 <span id="cb15-3"><a href="#cb15-3"></a>integer <span class="ot">&lt;-</span>  <span class="fu">c</span>(2L, 4L) <span class="co"># L indica que son enteros</span></span>
 <span id="cb15-4"><a href="#cb15-4"></a>logical <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>) </span>
 <span id="cb15-5"><a href="#cb15-5"></a>complex <span class="ot">&lt;-</span> <span class="dv">3</span> <span class="sc">+</span> 4i <span class="co"># complejos</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</div>
 <div class="fragment">
 <p><span class="medium-par">Podemos consultar cuál es el tipo de vector con <code>class()</code> o <code>typeof()</code></span></p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="fu">class</span>(a)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="fu">class</span>(a)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "numeric"</code></pre>
 </div>
 </div>
-<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">typeof</span>(b)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">typeof</span>(b)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "double"</code></pre>
 </div>
@@ -752,15 +756,261 @@ Big Text
 <p><span class="big-par"><strong>Creando vectores</strong></span></p>
 <div class="fragment">
 <p><span class="medium-par">Vimos que es posible crear vectores con la función “c”.</span></p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>x <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>x <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 <div class="fragment">
 <p><span class="medium-par">Una secuencia sencilla también podemos crearla de la siguiente manera.</span></p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a>y <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span></span>
-<span id="cb21-2"><a href="#cb21-2"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a>y <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span></span>
+<span id="cb21-2"><a href="#cb21-2"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="otros-tipos-de-datos-en-r" class="slide level2">
+<h2>Otros tipos de datos en R</h2>
+<div class="fragment">
+<p>Existen estructuras de datos más complejas que los vectores.</p>
+</div>
+<div class="fragment">
+<p><span class="big-par"><strong>Data Frames</strong></span></p>
+</div>
+<div class="fragment">
+<p><span class="medium-par"><span class="pur">Es el formato más común al que nos enfrentamos diariamente</span> en hojas de cálculo, o programas como SPSS, Stata, etc.</span></p>
+</div>
+<div class="fragment">
+<p><span class="medium-par">Podemos entender un data frame como un .pur[conjunto de vectores que tienen la misma longitud] y que conforman una tabla (i.e.&nbsp;toman forma rectangular).</span></p>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a>curso <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">nombre =</span> <span class="fu">c</span>(<span class="st">"Klaus"</span>, <span class="st">"Juan"</span>, <span class="st">"Ignacio"</span>),</span>
+<span id="cb23-2"><a href="#cb23-2"></a>                    <span class="at">notas =</span> <span class="fu">c</span>(<span class="dv">7</span>, <span class="dv">7</span>, <span class="dv">1</span>))</span>
+<span id="cb23-3"><a href="#cb23-3"></a>curso</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   nombre notas
+1   Klaus     7
+2    Juan     7
+3 Ignacio     1</code></pre>
+</div>
+</div>
+<p><span class="medium-par-red">La mayor parte de este curso se enfocará en cómo trabajar con este tipo de objetos en R.</span></p>
+</div>
+</section>
+<section id="otros-tipos-de-datos-en-r-1" class="slide level2">
+<h2>Otros tipos de datos en R</h2>
+<p><span class="big-par"><strong>Matrices</strong></span></p>
+<div class="fragment">
+<p><strong>Pueden ser entendidas como una extensión de los vectores</strong>, pero con dimensión de filas y columnas.</p>
+</div>
+<div class="fragment">
+<p><span class="medium-par-red">No pueden convivir tipos de datos diferentes dentro de una matriz.</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25" data-code-line-numbers="1|2-3|4-5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a>curso <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="st">"Klaus"</span>, <span class="st">"Juan"</span>, <span class="st">"Ignacio"</span>, <span class="dv">7</span>, <span class="dv">7</span>, <span class="dv">1</span>),</span>
+<span id="cb25-2"><a href="#cb25-2"></a>                <span class="at">nrow =</span> <span class="dv">3</span>,</span>
+<span id="cb25-3"><a href="#cb25-3"></a>                <span class="at">ncol =</span> <span class="dv">2</span>)</span>
+<span id="cb25-4"><a href="#cb25-4"></a><span class="fu">colnames</span>(curso) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"nombre"</span>, <span class="st">"nota"</span>)</span>
+<span id="cb25-5"><a href="#cb25-5"></a>curso</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     nombre    nota
+[1,] "Klaus"   "7" 
+[2,] "Juan"    "7" 
+[3,] "Ignacio" "1" </code></pre>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>Si se fijan, los números fueron forzados a ser <em>character</em> (“1”).</p>
+<!---
+From doc effect of transition="slide" should be "slide horizontally", but produces slide vertically (??).
+See doc for more transition types: https://quarto.org/docs/presentations/revealjs/advanced.html
+--->
+<!---
+ ## Otros tipos de datos en R {transition="slide"}  
+--->
+</div>
+</section>
+<section id="otros-tipos-de-datos-en-r-2" class="slide level2" data-transition="convex">
+<h2>Otros tipos de datos en R</h2>
+<p><span class="big-par"><strong>Listas</strong></span></p>
+<div class="fragment">
+<p>Una lista es una estructura que <strong>puede contener diferentes tipos de datos</strong>, incluso listas.</p>
+</div>
+<div class="fragment">
+<p>A veces se les llama vectores genéricos, dado que soportan cualquier tipo de formato.</p>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27" data-code-line-numbers="1|2|3-4|6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a>a <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>)</span>
+<span id="cb27-2"><a href="#cb27-2"></a>b <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"rojo"</span>, <span class="st">"verde"</span>)</span>
+<span id="cb27-3"><a href="#cb27-3"></a>c <span class="ot">&lt;-</span>  <span class="fu">data.frame</span>(<span class="at">nom =</span> <span class="st">"Klaus"</span>, <span class="st">"Juan"</span>,</span>
+<span id="cb27-4"><a href="#cb27-4"></a>                          <span class="at">nota =</span> <span class="dv">7</span>, <span class="dv">7</span>)</span>
+<span id="cb27-5"><a href="#cb27-5"></a></span>
+<span id="cb27-6"><a href="#cb27-6"></a>lista1 <span class="ot">&lt;-</span> <span class="fu">list</span>(a,b,c)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div class="fragment">
+<!---
+ .pur[Esta estructura es más compleja de entender], pero son .pur[muy útiles] cuando ya se tiene cierto manejo de `R`. 
+--->
+<p><span class="pur">Esta estructura es más compleja de entender</span>, pero son <span class="pur">muy útiles</span> cuando ya se tiene cierto manejo de <span class="pur">R</span>.</p>
+</div>
+</section>
+<section id="otros-tipos-de-datos-en-r-3" class="slide level2" data-transition="concave">
+<h2>Otros tipos de datos en R</h2>
+<p><span class="big-par"><strong>Factores</strong></span></p>
+<div class="fragment">
+<p>Son usados para representar <strong>variables categóricas</strong>, ordinales o no.</p>
+</div>
+<div class="fragment">
+<p>Parecen vectores de caracteres y a veces se comportan de esa manera (porque <strong>permiten guardar etiquetas</strong>), pero realmente son almacenados como <em>integers</em> (enteros, <span class="pur">que son más livianos para almacenar</span>).</p>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a>ocupacion <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">5</span>), </span>
+<span id="cb28-2"><a href="#cb28-2"></a>       <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"profesor"</span>, <span class="st">"musico"</span>, <span class="st">"doctora"</span>,</span>
+<span id="cb28-3"><a href="#cb28-3"></a>                  <span class="st">"taxista"</span>, <span class="st">"pescador"</span>))</span>
+<span id="cb28-4"><a href="#cb28-4"></a>ocupacion</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] profesor musico   doctora  profesor musico   profesor doctora  taxista 
+ [9] profesor pescador
+Levels: profesor musico doctora taxista pescador</code></pre>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>En las sesiones posteriores veremos que son muy importantes, sobre todo cuando queremos <span class="pur">visualizar</span> nuestros datos 📊📈.</p>
+</div>
+</section>
+<section id="otros-tipos-de-datos-en-r-4" class="slide level2" data-transition="zoom">
+<h2>Otros tipos de datos en R</h2>
+<p><span class="big-par"><strong><em>Arrays</em></strong></span></p>
+<div class="fragment">
+<p>Finalmente, este tipo de datos es similar a las matrices, sin embargo, pueden tener más de dos dimensiones.</p>
+</div>
+<div class="fragment">
+<p>De hecho, <span class="medium-par-red">un <em>array</em> de dos dimensiones es lo mismo que una matriz.</span></p>
+</div>
+<div class="fragment">
+<!---
+ TODO: code markdown notation is not shown with same size as the remaining text
+--->
+<p><strong>No las usaremos para nada en el curso</strong> (pero pueden consultar más sobre ellas con <code>help(array)</code> 👀)</p>
+</div>
+</section>
+<section id="volviendo-a-los-data-frames" class="slide level2">
+<h2>Volviendo a los <em>Data Frames</em></h2>
+<div class="fragment">
+<p>Como mencionamos anteriormente, los <em>data frames</em> <strong>son la estructura de datos a la que nos enfrentamos más a menudo.</strong></p>
+</div>
+<div class="fragment">
+<p>Para explorar y manipular <em>data frames</em> utilizaremos el paquete <code>guaguas</code> de <strong>Riva Quiroga (lingüista chilena).</strong></p>
+</div>
+<div class="fragment">
+<!---
+ ![](imagenes/guaguas.PNG){.absolute top=250 left=80 width="900" height="300"} 
+--->
+<p><span class="center"><img src="imagenes/guaguas.png" width="70%"></span></p>
+</div>
+<div class="fragment">
+<p>Instalamos el paquete (<span class="pur">nuestro primer paquete 😍</span>)</p>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a><span class="fu">install.packages</span>(<span class="st">"guaguas"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="volviendo-a-los-data-frames-1" class="slide level2">
+<h2>Volviendo a los <em>Data Frames</em></h2>
+<div class="fragment">
+<p>Y luego lo cargamos en nuestra sesión (<span class="pur">no basta con instalarlo para usarlo</span>).</p>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a><span class="fu">library</span>(guaguas)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div class="fragment">
+<p>Es una base de <span class="medium-par-red">alto interés sociológico</span>. 🧐</p>
+</div>
+<div class="fragment">
+<p><span class="center"><img src="imagenes/romane.png" width="60%"></span></p>
+</div>
+</section>
+<section id="volviendo-a-los-data-frames-2" class="slide level2 scrollable" data-transition="slide">
+<h2>Volviendo a los <em>Data Frames</em></h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1"><span class="medium-par">Plot</span></a></li><li><a href="#tabset-1-2"><span class="medium-par">Code</span></a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<!---
+{r, include= F, echo = F, warning=F, out.width = "700px", out.height="400px" , fig.align='center'} 
+--->
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="pres_files/figure-revealjs/unnamed-chunk-18-1.png" width="800" height="600"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2">
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a>g <span class="ot">&lt;-</span> guaguas <span class="sc">%&gt;%</span> </span>
+<span id="cb32-2"><a href="#cb32-2"></a>  <span class="fu">filter</span>(nombre <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Milenka"</span>, <span class="st">"Branco"</span>, <span class="st">"Salomé"</span>), anio <span class="sc">&gt;</span> <span class="dv">1980</span>)</span>
+<span id="cb32-3"><a href="#cb32-3"></a>df_g <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(g)</span>
+<span id="cb32-4"><a href="#cb32-4"></a></span>
+<span id="cb32-5"><a href="#cb32-5"></a>df_g <span class="sc">%&gt;%</span> </span>
+<span id="cb32-6"><a href="#cb32-6"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(anio, n, <span class="at">color =</span> nombre)) <span class="sc">+</span></span>
+<span id="cb32-7"><a href="#cb32-7"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb32-8"><a href="#cb32-8"></a>  <span class="fu">scale_color_colorblind</span>() <span class="sc">+</span></span>
+<span id="cb32-9"><a href="#cb32-9"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"año"</span>, <span class="at">y =</span> <span class="st">"total inscripciones"</span>,</span>
+<span id="cb32-10"><a href="#cb32-10"></a>       <span class="at">title =</span> <span class="st">"Inscripciones de nombres de personajes de 'Romané'"</span>) <span class="sc">+</span></span>
+<span id="cb32-11"><a href="#cb32-11"></a>  <span class="fu">theme_ipsum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="volviendo-a-los-data-frames-3" class="slide level2 scrollable" data-transition="slide">
+<h2>Volviendo a los <em>Data Frames</em></h2>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1"><span class="medium-par">Plot</span></a></li><li><a href="#tabset-2-2"><span class="medium-par">Code</span></a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<!---
+{r, include= F, echo = F, warning=F, out.width = "700px", out.height="400px" , fig.align='center'} 
+--->
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="pres_files/figure-revealjs/unnamed-chunk-20-1.png" width="800" height="600"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-2">
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a>g <span class="ot">&lt;-</span> guaguas <span class="sc">%&gt;%</span> </span>
+<span id="cb33-2"><a href="#cb33-2"></a>  <span class="fu">filter</span>(nombre <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Kevin"</span>, <span class="st">"Bryan"</span>, <span class="st">"Brayan"</span>, <span class="st">"Brian"</span>), anio <span class="sc">&gt;</span> <span class="dv">1980</span>)</span>
+<span id="cb33-3"><a href="#cb33-3"></a>df_g <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(g)</span>
+<span id="cb33-4"><a href="#cb33-4"></a></span>
+<span id="cb33-5"><a href="#cb33-5"></a>df_g <span class="sc">%&gt;%</span> </span>
+<span id="cb33-6"><a href="#cb33-6"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(anio, n, <span class="at">color =</span> nombre)) <span class="sc">+</span></span>
+<span id="cb33-7"><a href="#cb33-7"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb33-8"><a href="#cb33-8"></a>  <span class="fu">scale_color_colorblind</span>() <span class="sc">+</span></span>
+<span id="cb33-9"><a href="#cb33-9"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"año"</span>, <span class="at">y =</span> <span class="st">"total inscripciones"</span>,</span>
+<span id="cb33-10"><a href="#cb33-10"></a>       <span class="at">title =</span> <span class="st">"El efecto 'Backstreet Boys'"</span>) <span class="sc">+</span></span>
+<span id="cb33-11"><a href="#cb33-11"></a>  <span class="fu">theme_ipsum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 </div>
 </div>
