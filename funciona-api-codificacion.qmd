@@ -90,7 +90,7 @@ format:
 
 ## El problema {transition="convex"}
 
-![](imagenes/ocupacion.jpg){width=600px fig-align="center"}
+![](imagenes/ocupacion.JPG){width=600px fig-align="center"}
 
 ## El problema {transition="slide"}
 
@@ -111,7 +111,7 @@ format:
 
 ![](imagenes/imagen-api.png){width=300px} 
 
-![](imagenes/tutorial-api2.jpg){width=400px fig-align="rigth"}
+![](imagenes/tutorial-api2.JPG){width=400px fig-align="rigth"}
 
 :::
 
