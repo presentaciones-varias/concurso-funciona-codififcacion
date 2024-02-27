@@ -1,0 +1,153 @@
+---
+# title: "Capacitación en R y herramientas de productividad"
+# author: "Abril 2021"
+format:
+  revealjs:
+    auto-stretch: false
+    margin: 0
+    slide-number: true
+    scrollable: true
+    preview-links: auto
+    logo: imagenes/logo_portada2.png
+    css: ine_quarto_styles.css
+    # footer: <https://quarto.org>
+---
+
+#
+
+
+[]{.linea-superior} 
+[]{.linea-inferior} 
+
+<!---
+ <img src="imagenes/logo_portada2.png" style="width: 20%"/>  
+--->
+
+<img src="imagenes/logo_portada2.png" width="20%"/>  
+
+
+[**Servicio API de codificación automática de ocupación y rama de actividad económica**]{.big-par .center-justified}
+
+[**Instituto Nacional de Estadísticas**]{.big-par .center-justified}
+
+[**Concurso Funciona! 2023 - Servicio Civil**]{.big-par .center-justified}
+
+[**Febrero 2024**]{.big-par .center-justified}
+
+
+## Team de la iniciativa {transition="zoom"}
+
+::: {.panel-tabset}
+
+### [Klaus]{.medium-par}
+
+<br/>
+<br/>
+
+[**Klaus Lehmann**]{.big-par}
+
+[*Coordinador Técnico Proyecto Ciencia de Datos - Subdirección Técnica*]{.medium-par}
+
+### [Sara]{.medium-par}
+
+<br/>
+<br/>
+
+[**Sara Mellado**]{.big-par}
+
+[*Coordinadora Sección de Nomenclaturas - Subdepartamento de Calidad y Estándares*]{.medium-par}
+
+
+### [Antonieta]{.medium-par}
+
+<br/>
+<br/>
+
+[**Antonieta Maulén**]{.big-par}
+
+[*Analista Socioeconómico - Subdepartamento de Estadísticas Socioeconómicas*]{.medium-par}
+
+
+### [Felipe]{.medium-par}
+
+<br/>
+<br/>
+
+[**Felipe Jiménez**]{.big-par}
+
+[*Arquitecto de Tecnologías de la Información - Subdetpartamento de Innovación y Arquitectura TI*]{.medium-par}
+
+### [Ignacio]{.medium-par}
+
+<br/>
+<br/>
+
+[**Ignacio Agloni**]{.big-par}
+
+[*Jefe Proyecto Ciencia de Datos - Subdirección Técnica*]{.medium-par}
+
+:::
+
+## El problema {transition="convex"}
+
+![](imagenes/ocupacion.jpg){width=600px fig-align="center"}
+
+## El problema {transition="slide"}
+
+::: {layout-ncol=2}
+
+![](imagenes/reloj.png){width=400px}
+
+![](imagenes/peso.jpg){width=400px} 
+
+:::
+
+## La solución {transition="slide"}
+
+<br>
+<br>
+
+::: {layout-ncol=2}
+
+![](imagenes/imagen-api.png){width=300px} 
+
+![](imagenes/tutorial-api2.jpg){width=400px fig-align="rigth"}
+
+:::
+
+## Impacto {transition="zoom"}
+
+<br>
+
+::: {.incremental .medium-par}
+
+- **Reducción del tiempo** en que las estadísticas son entregadas a las personas usuarias <br><br>
+
+- Reducción del **costo económico** de codificación <br><br>
+
+- Posibilidad de **enfocar el trabajo humano** en el aseguramiento de calidad <br><br>
+
+- Disposición del servicio API de **manera abierta** a los servicios públicos o empresas <br><br>
+
+:::
+
+
+#
+
+
+[]{.linea-superior} 
+[]{.linea-inferior} 
+
+<!---
+ <img src="imagenes/logo_portada2.png" style="width: 20%"/>  
+--->
+
+<img src="imagenes/logo_portada2.png" width="20%"/>  
+
+
+[**GRACIAS**]{.big-par .center-justified}
+
+[**Concurso Funciona! 2023 - Servicio Civil**]{.big-par .center-justified}
+
+[**Febrero 2024**]{.big-par .center-justified}
+
